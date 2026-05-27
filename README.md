@@ -44,38 +44,8 @@ Unlike a standard LLM call, our AI operates on a state machine powered by **Lang
 4. **Reasoning Loop:** LangGraph determines the logical flaw (e.g., "They used an O(n^2) approach instead of a Hash Map").
 5. **Guidance:** The AI generates a contextual hint and evaluates the candidate's time/space complexity.
 
-## ⚙️ Running the Dojo Locally
-
-### Prerequisites
-* Python 3.10+
-* Node.js & npm
-* Docker (must be running for the code sandbox)
-
-### Setup Instructions
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/roshni-choudhary/ai-interview-agent.git
-   cd ai-interview-agent
-   ```
-2. **Start the Sandbox & Backend:**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   # Set your OPENAI_API_KEY in a .env file
-   uvicorn main:app --reload
-   ```
-3. **Start the Frontend:**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-4. **Enter the Dojo:** Open `http://localhost:5173` in your browser.
-
 ## 🔮 Future Roadmap (The Path to Mastery)
 - [ ] **Phase 1:** Real-time WebRTC Voice interactions (The AI physically speaks to you).
 - [ ] **Phase 2:** Multi-language support (C++, Rust, Go).
 - [ ] **Phase 3:** Enterprise dashboard for recruiters to view detailed evaluation reports.
 
----
-*Built with ❤️ for the Agentic AI & Automation Track.*
